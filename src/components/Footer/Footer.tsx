@@ -1,10 +1,10 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { SFooter, ContainerFooter, RowFooter, Rowcol, Facebook, Instagram, Tiktok, Twitter, Linkedln, RedesUl, RedesLi, Copyright } from "./styles";
+import { SFooter, ContainerFooter, RowFooter, Rowcol, Facebook, Instagram, Tiktok, Twitter, Linkedln, Typography,  RedesUl, RedesLi,  Copyright } from "./styles";
 
-import Apps from "../../assets/apps.png";
 import Pagamentos from "../../assets/pagamentos.png";
+import Apps from "../../assets/apps.png";
 
 
 const Footer: NextPage = () => {
@@ -15,61 +15,107 @@ const Footer: NextPage = () => {
       <ContainerFooter>
         <RowFooter>
           <Rowcol>
-            <h4>Atendimento ao cliente</h4>
+            <Typography>Atendimento ao cliente</Typography>
             <RedesUl>
               <RedesLi>
-                <a href="https://help.shopee.com.br/br/s" className="FA0WjS" title="">central de ajuda</a>
+                <Link href="https://help.shopee.com.br/br/s"  title="Central de ajuda">
+                    <a  target="_blank"  >Central de ajuda</a>
+                </Link>
               </RedesLi>
               <RedesLi>
-                <a href="https://help.shopee.com.br/br/s/article/No%C3%A7%C3%B5es-b%C3%A1sicas-do-comprador-Como-fa%C3%A7o-uma-compra-no-Shopee" className="FA0WjS" title="">Como comprar</a>
+                <Link href="https://help.shopee.com.br/br/s/article/No%C3%A7%C3%B5es-b%C3%A1sicas-do-comprador-Como-fa%C3%A7o-uma-compra-no-Shopee"  title="Como comprar">
+                  <a target="_blank"  >Como comprar</a>
+                </Link>
               </RedesLi>
               <RedesLi>
-                <a href="https://help.shopee.com.br/br/s/article/Básico-do-Comprador-Quais-meios-de-pagamento-são-suportados-pelo-Shopee" className="FA0WjS" title="">Métodos de Pagamento</a>
+                <Link href="https://help.shopee.com.br/br/s/article/Básico-do-Comprador-Quais-meios-de-pagamento-são-suportados-pelo-Shopee" title="Métodos de Pagamento">
+                  <a target="_blank"  >
+                    Métodos de Pagamento
+                  </a>
+                </Link>
               </RedesLi>
               <RedesLi>
-                <a href="https://help.shopee.com.br/br/s/article/No%C3%A7%C3%B5es-b%C3%A1sicas-do-comprador-O-que-%C3%A9-a-garantia-do-Shopee-Como-isso-me-protege-como-comprador" className="FA0WjS" title="">garantia Shopee</a>
+                <Link href="https://help.shopee.com.br/br/s/article/No%C3%A7%C3%B5es-b%C3%A1sicas-do-comprador-O-que-%C3%A9-a-garantia-do-Shopee-Como-isso-me-protege-como-comprador"  title="Garantia Shopee">
+                  <a target="_blank"  >
+                    Garantia Shopee
+                  </a>
+                </Link>
               </RedesLi>
               <RedesLi>
-                <a href="https://help.shopee.com.br/br/s/topic/0TO6F000000aJA9WAM/" className="FA0WjS" title="">Devolução e reembolso</a>
+                <Link href="https://help.shopee.com.br/br/s/topic/0TO6F000000aJA9WAM/"  title="Devolução e reembolso">
+                  <a target="_blank"  >
+                    Devolução e reembolso
+                  </a>
+                </Link>
               </RedesLi>
               <RedesLi>
-                <a href="https://help.shopee.com.br/br/s/article/Coment%C3%A1rios-Como-entrar-em-contato-com-o-Atendimento-ao-Cliente-da-Shopee" className="FA0WjS" title="">Falar com a gente</a>
+                <Link href="https://help.shopee.com.br/br/s/article/Coment%C3%A1rios-Como-entrar-em-contato-com-o-Atendimento-ao-Cliente-da-Shopee"  title="Falar com a gente">
+                  <a target="_blank"  >
+                    Falar com a gente
+                  </a>
+                </Link>
               </RedesLi>
               <RedesLi>
-                <a href="https://help.shopee.com.br/br/s/article/Ouvidoria-Como-abrir-uma-solicitação-para-a-ouvidoria" className="FA0WjS" title="">Ouvidoria</a>
+                <Link href="https://help.shopee.com.br/br/s/article/Ouvidoria-Como-abrir-uma-solicitação-para-a-ouvidoria"  title="Ouvidoria">
+                  <a target="_blank"  >
+                    Ouvidoria
+                  </a>
+                </Link>
               </RedesLi>
             </RedesUl>
           
           </Rowcol>
           <Rowcol>
-            <h4>Sobre a shopee</h4>
+            <Typography>Sobre a shopee</Typography>
             <RedesUl>
               <RedesLi>
-                <a href="https://help.shopee.com.br/br/s" className="FA0WjS" title="">central de ajuda</a>
+                <Link href="https://careers.shopee.com.br/about"  title="Sobre Nós">
+                  <a target="_blank"  >
+                    Sobre Nós
+                  </a>
+                </Link>
               </RedesLi>
               <RedesLi>
-                <a href="https://help.shopee.com.br/br/s/article/No%C3%A7%C3%B5es-b%C3%A1sicas-do-comprador-Como-fa%C3%A7o-uma-compra-no-Shopee" className="FA0WjS" title="">Como comprar</a>
+                <Link href="https://help.shopee.com.br/br/s/article/Pol%C3%ADticas-Shopee"  title="Políticas Shopee">
+                  <a target="_blank"  >
+                    Políticas Shopee
+                  </a>
+                </Link>
               </RedesLi>
               <RedesLi>
-                <a href="https://help.shopee.com.br/br/s/article/Básico-do-Comprador-Quais-meios-de-pagamento-são-suportados-pelo-Shopee" className="FA0WjS" title="">Métodos de Pagamento</a>
+                <Link href="https://help.shopee.com.br/s/article/Programa-de-Afiliados-da-Shopee-Termos-e-Condi%C3%A7%C3%B5es"  title="Programa De Afiliados Da Shopee">
+                  <a target="_blank"  >
+                    Programa De Afiliados Da Shopee
+                  </a>
+                </Link>
               </RedesLi>
               <RedesLi>
-                <a href="https://help.shopee.com.br/br/s/article/No%C3%A7%C3%B5es-b%C3%A1sicas-do-comprador-O-que-%C3%A9-a-garantia-do-Shopee-Como-isso-me-protege-como-comprador" className="FA0WjS" title="">garantia Shopee</a>
+                <Link href="https://shopee.com.br/flash_sale"  title="Ofertas Relâmpago">
+                  <a target="_blank"  >
+                    Ofertas Relâmpago
+                  </a>
+                </Link>
               </RedesLi>
               <RedesLi>
-                <a href="https://help.shopee.com.br/br/s/topic/0TO6F000000aJA9WAM/" className="FA0WjS" title="">Devolução e reembolso</a>
+                <Link href="https://shopee.com.br/blog"  title="Shopee Blog">
+                  <a target="_blank"  >
+                    Shopee Blog
+                  </a>
+                </Link>
               </RedesLi>
               <RedesLi>
-                <a href="https://help.shopee.com.br/br/s/article/Coment%C3%A1rios-Como-entrar-em-contato-com-o-Atendimento-ao-Cliente-da-Shopee" className="FA0WjS" title="">Falar com a gente</a>
+                <Link href="https://shopee.com.br/m/imprensa"  title="Imprensa">
+                  <a target="_blank"  >
+                    Imprensa
+                  </a>
+                </Link>
               </RedesLi>
-              <RedesLi>
-                <a href="https://help.shopee.com.br/br/s/article/Ouvidoria-Como-abrir-uma-solicitação-para-a-ouvidoria" className="FA0WjS" title="">Ouvidoria</a>
-              </RedesLi>
+             
             </RedesUl>
-          
+
           </Rowcol>
           <Rowcol>
-            <h4>Pagamento</h4>
+            <Typography>Pagamento</Typography>
             
               <a  target="_blank">
                 <Image
@@ -83,38 +129,48 @@ const Footer: NextPage = () => {
           
           </Rowcol>
           <Rowcol>
-            <h4>Siga-nos</h4>
+            <Typography>Siga-nos</Typography>
             <RedesUl>
               <RedesLi>
-                <a href="https://facebook.com/ShopeeBR" className="FA0WjS" title="" target="_blank">
-                  <Facebook/> Facebook
-                </a>
+                <Link href="https://facebook.com/ShopeeBR"  title="Facebook" >
+                  <a target="_blank"  >
+                    <Facebook/> Facebook
+                  </a>
+                </Link>
               </RedesLi>
               <RedesLi>
-                <a href="https://instagram.com/Shopee_BR" className="FA0WjS" title="" target="_blank">
-                  <Instagram/> Instagram
-                </a>
+                <Link href="https://instagram.com/Shopee_BR"  title="Instagram" >
+                  <a target="_blank"  >
+                    <Instagram/> Instagram
+                  </a>
+                </Link>
               </RedesLi>
               <RedesLi>
-                <a href="https://www.tiktok.com/@shopee_br" className="FA0WjS" title="" target="_blank">
-                  <Tiktok/> TikTok
-                </a>
+                <Link href="https://www.tiktok.com/@shopee_br"  title="Tiktok">
+                  <a target="_blank"  >
+                    <Tiktok/> TikTok
+                  </a>
+                </Link>
               </RedesLi>
               <RedesLi>
-                <a href="https://twitter.com/shopee_br" className="FA0WjS" title="" target="_blank">
-                  <Twitter/> Twitter
-                </a>
+                <Link href="https://twitter.com/shopee_br"  title="Twitter">
+                  <a target="_blank"  >
+                    <Twitter/> Twitter
+                  </a>
+                </Link>
               </RedesLi>
               <RedesLi>
-                <a href="https://linkedin.com/company/shopee" className="FA0WjS" title="" target="_blank">
-                  <Linkedln/> LinkedIn
-                </a>
+                <Link href="https://linkedin.com/company/shopee"  title="Linkedin">
+                  <a target="_blank"  >
+                    <Linkedln/> LinkedIn
+                  </a>
+                </Link>
               </RedesLi>
             </RedesUl>
           
           </Rowcol>
           <Rowcol>
-            <h4>Baixar app shopee</h4>
+            <Typography>Baixar app shopee</Typography>
             <Link href="https://shopee.com.br/web">
               <a  target="_blank">
                 <Image
