@@ -1,9 +1,13 @@
-const Layout = ({children}:any) => {
+import {NextPage } from "next";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+
+const Layout: NextPage<any> = ({ children }:any) => {
     return (
         <>
-            <h1>Header</h1>
-            {children}
-            <h2>Footer</h2>
+            <Header />
+                {children}
+            <Footer />
         </>
     )
 }

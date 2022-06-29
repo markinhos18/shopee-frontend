@@ -1,7 +1,9 @@
 import type { AppProps } from "next/app";
-import { createGlobalStyle } from "styled-components";
-import { ThemeProvider } from "styled-components";
-// import "bootstrap/dist/css/bootstrap.css";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import Layout from "../src/components/Layout/Layout";
+config.autoAddCss = false;
 
 const GlobalStyle = createGlobalStyle`
 
@@ -33,7 +35,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     </>
   );

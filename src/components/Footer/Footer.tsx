@@ -135,6 +135,7 @@ const Footer: NextPage = () => {
                 <Link href="https://facebook.com/ShopeeBR"  title="Facebook" >
                   <a target="_blank"  >
                     <Facebook/> Facebook
+                    
                   </a>
                 </Link>
               </RedesLi>

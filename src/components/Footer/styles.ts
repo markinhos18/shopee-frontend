@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {  Container, Col2, ConfigLink } from "../../../styles/utils";
 
+import Socialmedia from "../../../public/img/redes.png";
 
 export const SFooter = styled.footer`
   width: 100%;
@@ -27,18 +28,20 @@ export const Rowcol = styled.div`
 export const Facebook = styled.img`
   width: 1.8rem;
   height: 1.8rem;
-  background-image: url(/_next/static/media/redes.png);
+  /* background-image: url("../../../public/img/logo.png"); */
+  background-image: url(${Socialmedia.src});
   background-position: 32% 8%;
   background-size: 15rem;
   margin-right:.625rem;
-  // background-image: url(https://www.facebook.com/images/fb_icon_325x325.png);
+   /* background-image: url(https://www.facebook.com/images/fb_icon_325x325.png); */
 
 `;
 
 export const Instagram = styled.img`
 width: 1.8rem;
 height: 1.8rem;
-background-image: url(/_next/static/media/redes.png);
+/* background-image: url(/_next/static/media/redes.png); */
+background-image: url(${Socialmedia.src});
 background-position: 2% 73%;
 background-size: 15rem;
 margin-right:.625rem;
@@ -48,7 +51,8 @@ margin-right:.625rem;
 export const Tiktok = styled.img`
 width: 1.8rem;
 height: 1.8rem;
-background-image: url(/_next/static/media/redes.png);
+/* background-image: url(/_next/static/media/redes.png); */
+background-image: url(${Socialmedia.src});
 background-position: 57% 104%;
 background-size: 15rem;
 margin-right:.625rem;
@@ -58,7 +62,8 @@ margin-right:.625rem;
 export const Twitter = styled.img`
 width: 1.8rem;
 height: 1.8rem;
-background-image: url(/_next/static/media/redes.png);
+/* background-image: url(/_next/static/media/redes.png); */
+background-image: url(${Socialmedia.src});
 background-position: 75% 104%;
 background-size: 15rem;
 margin-right:.625rem;
@@ -68,7 +73,8 @@ margin-right:.625rem;
 export const Linkedln = styled.img`
 width: 1.8rem;
 height: 1.8rem;
-background-image: url(/_next/static/media/redes.png);
+/* background-image: url(/_next/static/media/redes.png); */
+background-image: url(${Socialmedia.src});
 background-position: 39% 76%;
 background-size: 15rem;
 margin-right:.625rem;
@@ -79,7 +85,7 @@ margin-right:.625rem;
 export const Typography = styled.h4`
   color: rgba(0,0,0,.54);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 0.9rem;
 `;
 
