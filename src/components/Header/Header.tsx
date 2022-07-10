@@ -1,4 +1,3 @@
-import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -13,7 +12,7 @@ import {
 import Logo from "../../assets/logo_shopee-orange.png";
 import ShoppingCart from "../../assets/carrinho.png";
 
-const Header: NextPage = () => {
+const Header = () => {
   return (
     <SHeader>
       <Navbar>

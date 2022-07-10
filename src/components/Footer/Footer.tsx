@@ -1,4 +1,3 @@
-import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { SFooter, ContainerFooter, RowFooter, Rowcol, Facebook, Instagram, Tiktok, Twitter, Linkedln, Typography,  RedesUl, RedesLi,  Copyright } from "./styles";
@@ -7,7 +6,7 @@ import Pagamentos from "../../assets/pagamentos.png";
 import Apps from "../../assets/apps.png";
 
 
-const Footer: NextPage = () => {
+const Footer = () => {
   const today = new Date();
   
   return (

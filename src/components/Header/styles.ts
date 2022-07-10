@@ -8,7 +8,7 @@ export const SHeader = styled.header`
 
 export const Navbar = styled.nav`
   /* background-color: white; */
-  ${Container};
+  ${Container}
 `;
 
 export const NavbarRow = styled.div`
