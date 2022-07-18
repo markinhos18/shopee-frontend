@@ -2,19 +2,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ProductContainer, Title, ProductList, ProductItem, ProductName, ProductPrice, ProductSplitPrice } from "./styles";
+import { IProduct } from "../../../types";
 
-
-interface Product {
-    _id: string;
-    name: string;
-    image: string;
-    // price: number;
-    formattedPrice: string;
-    splitPrice: string;
-}
 
 interface ProductsProps {
-    products: Product[];
+    products: IProduct[];
 }
 
 
@@ -27,19 +19,19 @@ const Products = ({products}: ProductsProps) => {
       </Title>
 
       <ProductList>
-        {products && products.map((products: Product) => (
-          <ProductItem key={products._id}>
-          <Link href='/'>
+        {products && products.map((product) => (
+          <ProductItem key={product._id}>
+          <Link href={`/products/${product._id}`}>
             <a>
-            <Image src={products.image} alt="Product 1" width={230} height={230} />
+            <Image src={product.image} alt="Product 1" width={230} height={230} />
               <ProductName>
-                {products.name}
+                {product.name}
               </ProductName>
               <ProductPrice>
-                {products.formattedPrice}
+                {product.formattedPrice}
               </ProductPrice>
               <ProductSplitPrice>
-                10x de {products.splitPrice} sem juros
+                10x de {product.splitPrice} sem juros
               </ProductSplitPrice>
             </a>
           </Link>

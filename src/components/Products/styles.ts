@@ -60,7 +60,3 @@ export const ProductSplitPrice = styled.small`
     font-weight: 700;
     color: #999;
 `;
-
-// export const ProductImage = styled.img`
-
-// `;

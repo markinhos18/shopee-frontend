@@ -24,7 +24,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
       productsApi: data
     }
   }
-
 }
 
 const Home: NextPage = ({ productsApi }: any) => {
