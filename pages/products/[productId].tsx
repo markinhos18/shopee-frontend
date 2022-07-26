@@ -1,22 +1,19 @@
 import { GetServerSideProps, NextPage } from "next";
 import Image from "next/image";
 import { useContext } from "react";
+import { useState } from 'react'
 
 import Banner from "../../src/components/Banner/Banner";
 import BannerProduct from '../../public/img/banner2.png';
-import { Button, InfoSummary, InfoTitle, ProductContainer, ProductDescription, ProductDetails, ProductImage, ProductName, ProductPrice, ProductSplitPrice } from "./styles";
+import { Button, InfoSummary, InfoTitle, ProductContainer, ProductDescription, ProductDetails, ProductImage, ProductName, ProductPrice, ProductSplitPrice, AlertAddCartSucess } from "./styles";
 import { IProduct } from "../../types";
 import { ShoppingCartContext } from "../../contexts/ShoppingCartContext";
-
-
-
 
 
 
 interface ProductsProps {
     product: IProduct;
 }
-
 
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
@@ -40,12 +37,24 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
 const ProductId: NextPage<ProductsProps> = ({ product }) => {
 
+  const [showElement, setShowElement] = useState(false);
+ 
+
   const { addProduct } = useContext(ShoppingCartContext);
-  
+
   const addProductInShoppingCart = (product: IProduct) => {
     // console.log(product);
     addProduct(product);
+    showOrHide();
   }
+
+   const showOrHide = () => {
+    setShowElement(true);
+    setTimeout(() => {
+      setShowElement(false);
+    }, 2000);
+  };
+
 
 
 
@@ -65,9 +74,13 @@ const ProductId: NextPage<ProductsProps> = ({ product }) => {
 
           <ProductSplitPrice>10x de {product.splitPrice} sem juros</ProductSplitPrice>
 
-          <Button onClick={() => addProductInShoppingCart(product) }>
+          <Button onClick={() => addProductInShoppingCart(product)   }>
             Adicionar ao carrinho
           </Button>
+
+          
+          { showElement ? <AlertAddCartSucess>Produto adicionado no carrinho !</AlertAddCartSucess> : null }
+
 
           <ProductDescription>  {product.description} </ProductDescription>
         </div>

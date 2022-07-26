@@ -54,7 +54,7 @@ const Header = () => {
             </a>
           </Link>
           <InputSearch type="text" width="60%" placeholder="Buscar" />
-          <Link href="/shopping-cart">
+          <Link href={`/cart/shopping-cart`}>
             <a>
               <Image
                 src={ShoppingCart}

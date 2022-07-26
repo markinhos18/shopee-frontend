@@ -60,6 +60,17 @@ export const Button = styled.button`
     margin: 2.25rem 0;
 `;
 
+export const AlertAddCartSucess = styled.div`
+    background-color: green;
+    width: 45%;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 4px;
+    /* font-weight: 600; */
+    margin: 1rem 0;
+`;
+
 export const ProductDescription = styled.small`
     font-size: 0.875rem;
 `;
