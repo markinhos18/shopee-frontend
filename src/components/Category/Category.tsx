@@ -64,7 +64,7 @@ const Category = () => {
                 </div>
             </a>
                             
-            <a href="https://live.shopee.com.br/aggregation?tab_id=1713250344519168" target="_blank" style={{textDecoration: "none",}}>
+            <a href="https://live.shopee.com.br/aggregation?tab_id=1713250344519168" target="_blank" rel="noreferrer"  style={{textDecoration: "none",}}>
                 <div  style={{width: "100px"}}>
                    
                     <div  style={ShopeeLive}></div>
