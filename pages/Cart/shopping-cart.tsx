@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useRouter } from "next/router";
 import { ShoppingCartContext } from "../../contexts/ShoppingCartContext";
-import { Main, Title, SubTitle, ShoppingCartContainer, ShoppingCartProducts, Separator, ButtonContainer, Product, ProductName, ProductPrice, DeleteIcon, ShoppingCartPayment, PaymentTitle, PaymmentValue, PaymmentShipping, PaymmentTotal, LoginTitle, InputGroup, Button } from "./styles";
+import { Main, Title, SubTitle, ShoppingCartContainer, ShoppingCartProducts, Separator, ButtonContainer, Product, ProductName, ProductPrice, DeleteIcon, ShoppingCartPayment, PaymentTitle, PaymmentValue, PaymmentShipping, PaymmentTotal, LoginTitle, InputGroup, Button } from "../../styles/stylescart";
 import { IProduct } from "../../types";
 
 
@@ -125,7 +125,7 @@ const ShoppingCart: NextPage = () => {
                   </ButtonContainer>
                   <Product>
                     <div>
-                      <Image src={product.image} width={180} height={180} />
+                      <Image src={product.image} width={180} height={180} alt=""/>
                     </div>
                     <ProductName>
                       {product.name}

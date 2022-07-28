@@ -1,45 +1,45 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
-import { Container } from "../../styles/utils"; 
+import { Container } from "./utils"; 
 
 
 
 
 
-export const Main = styled.main`
+const Main = styled.main`
     ${Container};
     min-height: 589px;
 `;
 
-export const Title = styled.h1`
+const Title = styled.h1`
     font-size: 1.875rem;
     font-weight: 700;
     margin: 5.625rem 0;
 `;
 
-export const SubTitle = styled.h2`
+const SubTitle = styled.h2`
     font-size: 1rem;
     font-weight: 700;
     margin: 0 0 1rem 0 ;
 `;
 
-export const ShoppingCartContainer = styled.div`
+const ShoppingCartContainer = styled.div`
     display: grid;
     grid-template-columns: 780px auto;
     gap: 1.5rem;
     min-height: 800px;
 `;
 
-export const ShoppingCartProducts = styled.section`
+const ShoppingCartProducts = styled.section`
 
 `;
 
-export const Separator = styled.hr`
+const Separator = styled.hr`
     border: 1px solid #c8c8c8;
     border-radius: 0px;
 `;
 
-export const ButtonContainer = styled.div`
+const ButtonContainer = styled.div`
     display: flex;
     justify-content: flex-end;
     margin: 0.8rem 0;
@@ -51,17 +51,17 @@ export const ButtonContainer = styled.div`
     }
 `;
 
-export const DeleteIcon = styled(FontAwesomeIcon)`
+const DeleteIcon = styled(FontAwesomeIcon)`
     color: ${({theme}) => theme.colors.secondary};
     font-size: 1rem;
 `;
 
-export const Product = styled.div`
+const Product = styled.div`
     display: grid;
     grid-template-columns: auto 350px auto;
 `;
 
-export const ProductName = styled.h3`
+const ProductName = styled.h3`
     font-size: 1rem;
     color: ${({theme}) => theme.colors.secondary};
     font-weight: 700;
@@ -69,7 +69,7 @@ export const ProductName = styled.h3`
     margin: 0;
 `;
 
-export const ProductPrice = styled.p`
+const ProductPrice = styled.p`
     font-size: 1.125rem;
     font-weight: 700;
     padding: 0;
@@ -77,20 +77,20 @@ export const ProductPrice = styled.p`
     place-self: start end;
 `;
 
-export const ShoppingCartPayment = styled.div`
+const ShoppingCartPayment = styled.div`
     background-color: #f0f1ef;
     border-radius: 1rem;
     padding: 1rem;
 `;
 
-export const PaymentTitle = styled.p`
+const PaymentTitle = styled.p`
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
 `;
 
-export const PaymmentValue = styled.div`
+const PaymmentValue = styled.div`
     font-size: 1rem;
     font-weight: 300;
     color: ${({theme}) => theme.colors.secondary};
@@ -104,7 +104,7 @@ export const PaymmentValue = styled.div`
     }
 `;
 
-export const PaymmentShipping = styled.div`
+const PaymmentShipping = styled.div`
     font-size: 1rem;
     font-weight: 300;
     color: ${({theme}) => theme.colors.secondary};
@@ -118,7 +118,7 @@ export const PaymmentShipping = styled.div`
     }
 `;
 
-export const PaymmentTotal = styled.div`
+const PaymmentTotal = styled.div`
     font-size: 1.125rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -132,7 +132,7 @@ export const PaymmentTotal = styled.div`
     }
 `;
 
-export const LoginTitle = styled.h3`
+const LoginTitle = styled.h3`
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -140,7 +140,7 @@ export const LoginTitle = styled.h3`
 
 `;
 
-export const InputGroup = styled.div`
+const InputGroup = styled.div`
     span {
         text-transform: uppercase;
         margin-bottom: 0.625rem;
@@ -157,7 +157,7 @@ export const InputGroup = styled.div`
 
 `;
 
-export const Button = styled.button`
+const Button = styled.button`
     display: block;
     border: inset;
     border-radius: 1rem;
@@ -173,3 +173,6 @@ export const Button = styled.button`
     text-align: center;
     width: 100%;
 `;
+
+
+export { Main, Title, SubTitle, ShoppingCartContainer, ShoppingCartProducts, Separator, ButtonContainer, Product, ProductName, ProductPrice, DeleteIcon, ShoppingCartPayment, PaymentTitle, PaymmentValue, PaymmentShipping, PaymmentTotal, LoginTitle, InputGroup, Button } ;

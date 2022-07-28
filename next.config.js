@@ -7,7 +7,7 @@ const nextConfig = {
   images: {
     domains: ['ecommerceshopnode.herokuapp.com'],
   },
-  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js']
+  // pageExtensions: ['index.tsx', 'index.ts', 'index.jsx', 'index.js']
 };
 
 module.exports = nextConfig;

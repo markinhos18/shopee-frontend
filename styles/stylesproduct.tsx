@@ -1,15 +1,15 @@
 import styled from "styled-components";
-import { Container } from "../../styles/utils"; 
+import { Container } from "./utils"; 
 
 
 
 
-export const ProductContainer = styled.main`
+const ProductContainer = styled.main`
   ${Container};
   min-height: 589px;
 `;
 
-export const ProductDetails = styled.div`
+const ProductDetails = styled.div`
     display: grid;
     grid-template-columns: 31.25rem auto;
     gap: 1rem;
@@ -17,7 +17,7 @@ export const ProductDetails = styled.div`
 
 `;
 
-export const ProductImage = styled.div`
+const ProductImage = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,13 +26,13 @@ export const ProductImage = styled.div`
 `;
 
 
-export const ProductName = styled.p`
+const ProductName = styled.p`
     font-size: 1.875rem;
     font-weight: 700;
     margin: 0;
 `;
 
-export const ProductPrice = styled.p`
+const ProductPrice = styled.p`
     color: ${({theme}) => theme.colors.primary};
     font-size: 2.125rem;
     font-weight: 700;
@@ -41,12 +41,12 @@ export const ProductPrice = styled.p`
 
 `;
 
-export const ProductSplitPrice = styled.small`
+const ProductSplitPrice = styled.small`
     font-size: 0.875rem;
     color: #999;
 `;
 
-export const Button = styled.button`
+const Button = styled.button`
     display: block;
     border: unset;
     border-radius: 4px;
@@ -61,7 +61,7 @@ export const Button = styled.button`
     margin: 2.25rem 0;
 `;
 
-export const AlertAddCartSucess = styled.div`
+const AlertAddCartSucess = styled.div`
     background-color: green;
     width: 45%;
     color: white;
@@ -72,13 +72,13 @@ export const AlertAddCartSucess = styled.div`
     margin: 1rem 0;
 `;
 
-export const ProductDescription = styled.small`
+const ProductDescription = styled.small`
     font-size: 0.875rem;
 `;
 
 
 
-export const InfoTitle = styled.h2`
+const InfoTitle = styled.h2`
     font-size: 1.875rem;
     font-weight: 700;
     margin: 0;
@@ -89,7 +89,10 @@ export const InfoTitle = styled.h2`
     }
 `;
 
-export const InfoSummary = styled.p`
+
+const InfoSummary = styled.p`
     line-height: 2rem;
     
 `;
+
+export  { Button, InfoSummary, InfoTitle, ProductContainer, ProductDescription, ProductDetails, ProductImage, ProductName, ProductPrice, ProductSplitPrice, AlertAddCartSucess } ;

@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 import Banner from "../../src/components/Banner/Banner";
 import BannerProduct from '../../public/img/banner2.png';
-import { Button, InfoSummary, InfoTitle, ProductContainer, ProductDescription, ProductDetails, ProductImage, ProductName, ProductPrice, ProductSplitPrice, AlertAddCartSucess } from "./styles";
+import { Button, InfoSummary, InfoTitle, ProductContainer, ProductDescription, ProductDetails, ProductImage, ProductName, ProductPrice, ProductSplitPrice, AlertAddCartSucess } from "../../styles/stylesproduct";
 import { IProduct } from "../../types";
 import { ShoppingCartContext } from "../../contexts/ShoppingCartContext";
 
@@ -70,7 +70,7 @@ const ProductId: NextPage<ProductsProps> = ({ product }) => {
         <Banner image={BannerProduct} width={1140} height={145} />
         <ProductDetails>
           <ProductImage>
-            <Image src={product.image} width={200} height={200} />
+            <Image src={product.image} width={200} height={200} alt="" />
           </ProductImage>
 
           <div>
