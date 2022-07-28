@@ -1,7 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import {  Container, Col2, ConfigLink } from "../../../styles/utils";
-
-import Socialmedia from "../../../public/img/redes.png";
 
 export const SFooter = styled.footer`
   width: 100%;
@@ -25,60 +24,10 @@ export const Rowcol = styled.div`
  padding: 0 1rem;
 `;
 
-export const Facebook = styled.img`
-  width: 1.8rem;
-  height: 1.8rem;
-  /* background-image: url("../../../public/img/logo.png"); */
-  background-image: url(${Socialmedia.src});
-  background-position: 32% 8%;
-  background-size: 15rem;
+
+
+export const SocialIcon = styled(FontAwesomeIcon)`
   margin-right:.625rem;
-   /* background-image: url(https://www.facebook.com/images/fb_icon_325x325.png); */
-
-`;
-
-export const Instagram = styled.img`
-width: 1.8rem;
-height: 1.8rem;
-/* background-image: url(/_next/static/media/redes.png); */
-background-image: url(${Socialmedia.src});
-background-position: 2% 73%;
-background-size: 15rem;
-margin-right:.625rem;
-  // background-image: url(https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png);
-`;
-
-export const Tiktok = styled.img`
-width: 1.8rem;
-height: 1.8rem;
-/* background-image: url(/_next/static/media/redes.png); */
-background-image: url(${Socialmedia.src});
-background-position: 57% 104%;
-background-size: 15rem;
-margin-right:.625rem;
-  // background-image: url(https://lf16-tiktok-web.ttwstatic.com/obj/tiktok-web-common-sg/mtact/static/images/logo_144c91a.png);
-`;
-
-export const Twitter = styled.img`
-width: 1.8rem;
-height: 1.8rem;
-/* background-image: url(/_next/static/media/redes.png); */
-background-image: url(${Socialmedia.src});
-background-position: 75% 104%;
-background-size: 15rem;
-margin-right:.625rem;
-  // background-image: url( https://abs.twimg.com/favicons/twitter.2.ico);
-`;
-
-export const Linkedln = styled.img`
-width: 1.8rem;
-height: 1.8rem;
-/* background-image: url(/_next/static/media/redes.png); */
-background-image: url(${Socialmedia.src});
-background-position: 39% 76%;
-background-size: 15rem;
-margin-right:.625rem;
-  // background-image: url( https://cdn.worldvectorlogo.com/logos/linkedin-icon.svg);
 `;
 
 

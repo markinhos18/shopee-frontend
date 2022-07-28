@@ -6,6 +6,7 @@ import { Container } from "../../styles/utils";
 
 export const ProductContainer = styled.main`
   ${Container};
+  min-height: 589px;
 `;
 
 export const ProductDetails = styled.div`

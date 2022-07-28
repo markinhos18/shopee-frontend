@@ -8,6 +8,7 @@ import { Container } from "../../styles/utils";
 
 export const Main = styled.main`
     ${Container};
+    min-height: 589px;
 `;
 
 export const Title = styled.h1`

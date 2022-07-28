@@ -1,6 +1,8 @@
 import { GetServerSideProps, NextPage } from "next";
 import Image from "next/image";
 import { useContext } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react'
 
 import Banner from "../../src/components/Banner/Banner";
@@ -45,52 +47,58 @@ const ProductId: NextPage<ProductsProps> = ({ product }) => {
   const addProductInShoppingCart = (product: IProduct) => {
     // console.log(product);
     addProduct(product);
-    showOrHide();
+    toast.success("Produto adicionado ao carrinho!",  {
+      position: "bottom-right",
+      autoClose: 2000,
+    });
+    // showOrHide();
   }
 
-   const showOrHide = () => {
-    setShowElement(true);
-    setTimeout(() => {
-      setShowElement(false);
-    }, 2000);
-  };
+  // const showOrHide = () => {
+  //   setShowElement(true);
+  //   setTimeout(() => {
+  //     setShowElement(false);
+  //   }, 2000);
+  // };
 
 
 
 
   return (
+    <>
+      <ProductContainer>
+        <Banner image={BannerProduct} width={1140} height={145} />
+        <ProductDetails>
+          <ProductImage>
+            <Image src={product.image} width={200} height={200} />
+          </ProductImage>
 
-    <ProductContainer>
-      <Banner image={BannerProduct} width={1140} height={145} />
-      <ProductDetails>
-        <ProductImage>
-          <Image src={product.image} width={200} height={200} />
-        </ProductImage>
+          <div>
+            <ProductName>{product.name}</ProductName>
 
-        <div>
-          <ProductName>{product.name}</ProductName>
+            <ProductPrice>{product.formattedPrice}</ProductPrice>
 
-          <ProductPrice>{product.formattedPrice}</ProductPrice>
+            <ProductSplitPrice>10x de {product.splitPrice} sem juros</ProductSplitPrice>
 
-          <ProductSplitPrice>10x de {product.splitPrice} sem juros</ProductSplitPrice>
+            <Button onClick={() => addProductInShoppingCart(product)   }>
+              Adicionar ao carrinho
+            </Button>
 
-          <Button onClick={() => addProductInShoppingCart(product)   }>
-            Adicionar ao carrinho
-          </Button>
-
-          
-          { showElement ? <AlertAddCartSucess>Produto adicionado no carrinho !</AlertAddCartSucess> : null }
+            
+            {/* { showElement ? <AlertAddCartSucess>Produto adicionado no carrinho !</AlertAddCartSucess> : null } */}
 
 
-          <ProductDescription>  {product.description} </ProductDescription>
-        </div>
-      </ProductDetails>
+            <ProductDescription>  {product.description} </ProductDescription>
+          </div>
+        </ProductDetails>
 
-      <InfoTitle><span>Inf</span>ormações do Produto</InfoTitle>
-      <InfoSummary>
-        {product.summary}
-      </InfoSummary>
-    </ProductContainer>
+        <InfoTitle><span>Inf</span>ormações do Produto</InfoTitle>
+        <InfoSummary>
+          {product.summary}
+        </InfoSummary>
+      </ProductContainer>
+      <ToastContainer />
+    </>
   );
 };
 

@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SFooter, ContainerFooter, RowFooter, Rowcol, Facebook, Instagram, Tiktok, Twitter, Linkedln, Typography,  RedesUl, RedesLi,  Copyright } from "./styles";
+
+import { faFacebook, faInstagram, faLinkedin, faTiktok, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { SFooter, ContainerFooter, RowFooter, Rowcol, SocialIcon, Typography,  RedesUl, RedesLi,  Copyright } from "./styles";
+
 
 import Pagamentos from "../../assets/pagamentos.png";
 import Apps from "../../assets/apps.png";
@@ -133,36 +136,35 @@ const Footer = () => {
               <RedesLi>
                 <Link href="https://facebook.com/ShopeeBR"  title="Facebook" >
                   <a target="_blank"  >
-                    <Facebook/> Facebook
-                    
+                    <SocialIcon icon={faFacebook} size="1x" /> Facebook
                   </a>
                 </Link>
               </RedesLi>
               <RedesLi>
                 <Link href="https://instagram.com/Shopee_BR"  title="Instagram" >
                   <a target="_blank"  >
-                    <Instagram/> Instagram
+                    <SocialIcon icon={faInstagram} size="1x" /> Instagram
                   </a>
                 </Link>
               </RedesLi>
               <RedesLi>
                 <Link href="https://www.tiktok.com/@shopee_br"  title="Tiktok">
                   <a target="_blank"  >
-                    <Tiktok/> TikTok
+                    <SocialIcon icon={faTiktok} size="1x" /> TikTok
                   </a>
                 </Link>
               </RedesLi>
               <RedesLi>
                 <Link href="https://twitter.com/shopee_br"  title="Twitter">
                   <a target="_blank"  >
-                    <Twitter/> Twitter
+                    <SocialIcon icon={faTwitter} size="1x" /> Twitter
                   </a>
                 </Link>
               </RedesLi>
               <RedesLi>
                 <Link href="https://linkedin.com/company/shopee"  title="Linkedin">
                   <a target="_blank"  >
-                    <Linkedln/> LinkedIn
+                    <SocialIcon icon={faLinkedin} size="1x" /> LinkedIn
                   </a>
                 </Link>
               </RedesLi>
