@@ -74,7 +74,7 @@ const Header = () => {
 
 
           <Link href={`/cart/shopping-cart`}>
-            <a>
+            <a> 
               <Image
                 src={ShoppingCart}
                 width="40"
