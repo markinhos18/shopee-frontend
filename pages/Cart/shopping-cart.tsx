@@ -32,7 +32,7 @@ const ShoppingCart: NextPage = () => {
     const values = getProducts();
     setProducts(values);
     // console.log(products);
-  }, [refresh]);
+  }, [getProducts, refresh]);
 
   const handleDeleteProduct = (id: string) => {
     toast.success("Produto removido do carrinho!",  {
