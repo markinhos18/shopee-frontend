@@ -8,7 +8,7 @@ import Products from "../src/components/Products/Products";
 
 export const getServerSideProps: GetServerSideProps = async () => {
   // const api = 'https://ecommerceshopnode.herokuapp.com';
-  const api = 'https://shopeebackend.netlify.app';
+  const api = 'https://shopeebackend.vercel.app';
   const result = await fetch(`${api}/products`);	
   const data = await result.json();
 
