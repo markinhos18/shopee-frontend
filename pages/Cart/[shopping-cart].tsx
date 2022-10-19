@@ -45,7 +45,7 @@ const ShoppingCart: NextPage = () => {
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
-    const api = 'https://ecommerceshopnode.herokuapp.com';
+    const api = 'https://e-commerce-back-tau.vercel.app';
     const token = await getTokenLogin(api, email, password);
     if(!token){
       toast.error("Login inválido",  {

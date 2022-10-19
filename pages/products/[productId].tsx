@@ -20,7 +20,8 @@ interface ProductsProps {
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const productId = ctx.params?.productId;
-  const api = 'https://ecommerceshopnode.herokuapp.com';
+  // const api = 'https://ecommerceshopnode.herokuapp.com';
+  const api = 'https://e-commerce-back-tau.vercel.app';
   const result = await fetch(`${api}/products/${productId}`);	
   const product: IProduct= await result.json();
    
