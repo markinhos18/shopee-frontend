@@ -8,13 +8,14 @@ import Products from "../src/components/Products/Products";
 
 export const getServerSideProps: GetServerSideProps = async () => {
   // const api = 'https://ecommerceshopnode.herokuapp.com';
-  const api = 'https://e-commerce-back-tau.vercel.app';
+  const api = 'https://backend-shopee-0ee6.onrender.com';
   const result = await fetch(`${api}/products`);	
   const data = await result.json();
 
   // convertendo o valor do preço para o formato brasileiro
   data.forEach((product: any) => {
-    product.image = `${api}/uploads/${product.image}`;
+    // product.image = `${api}/uploads/${product.image}`;
+    product.image = `${product.image}`;
     product.formattedPrice = (new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(product.price)); // Formata o preço e R$
     product.splitPrice = (new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(product.price/10)); // Formata o parcela e R$
   });

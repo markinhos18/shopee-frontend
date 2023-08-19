@@ -23,7 +23,8 @@ const Products = ({products}: ProductsProps) => {
           <ProductItem key={product._id}>
           <Link href={`/products/${product._id}`}>
             <a>
-            <Image src={product.image} alt="Product 1" width={230} height={230} />
+            {/* <Image src={product.image} alt="Product 1" width={230} height={230} /> */}
+            <Image src={`https://shopee-frontend-teal.vercel.app?${product.image}`} alt="Product 1" width={230} height={230} />
               <ProductName>
                 {product.name}
               </ProductName>

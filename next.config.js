@@ -5,7 +5,11 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    domains: ['ecommerceshopnode.herokuapp.com'],
+    domains: [
+      "e-commerce-back-tau.vercel.app",
+      "shopee-frontend-teal.vercel.app",
+    ],
+    // domains: ['ecommerceshopnode.herokuapp.com'],
   },
   // pageExtensions: ['index.tsx', 'index.ts', 'index.jsx', 'index.js']
 };
